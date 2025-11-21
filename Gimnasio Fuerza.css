@@ -1,0 +1,69 @@
+/* Fuente global */
+body {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+.hero {
+  height: 90vh;
+  background: url('img.fuerza/Gym.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 1;
+}
+
+.hero h1, .hero p {
+  position: relative;
+  z-index: 2;
+}
+
+/* TITULOS DE SECCIÓN */
+.section-title {
+  color: #ff9800;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* NAVBAR */
+.navbar .nav-link {
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* TARJETAS DE ENTRENADORES */
+#entrenadores .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+#entrenadores .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#entrenadores img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  font-size: 0.9rem;
+}

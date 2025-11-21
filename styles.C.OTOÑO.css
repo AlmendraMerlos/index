@@ -1,0 +1,126 @@
+
+/* Fondo general con imagen y capa oscura encima */
+body{padding-top: 70px;
+background:url( https://pic24.photophoto.cn/20120911/0035035894111221_b.jpg) no-repeat center fixed;
+background-size:cover;
+color: #4e342e;
+transition: background-color 0.3s,color 0.3s;
+position: relative;}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* capa beige con opacidad */
+  z-index: -1;
+}
+
+.carousel-item img{
+  width: 800px;
+  height: 700px;
+  object-fit: contain;
+  display:block;
+  margin:0 auto;
+background-color: #6d4c41;}
+
+
+
+/* Secciones */
+header, section {
+  padding: 2rem 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #6d4c41 !important; /* Marrón */
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link {
+  color: black !important;
+}
+
+.navbar .nav-link:hover {
+  color:#6d4c41 !important;
+}
+
+/* Botón modo oscuro */
+.btn-outline-light {
+  border-color: #fbe9e7;
+  color: #fbe9e7;
+}
+
+.btn-outline-light:hover {
+  background-color: #fbe9e7;
+  color: #6d4c41;
+}
+
+/* Títulos */
+h2, h4 {
+  color: #3e2723;
+}
+
+/* Reseñas */
+blockquote {
+  background-color:rgba(255, 248, 220, 0.6); /* Beige claro transparente */
+  padding: 1rem;
+  border-left: 5px solid #6d4c41;
+  border-radius: 5px;
+}
+
+
+
+/* Formulario */
+.form-control,
+.form-select {
+  background-color: #f5f5dc; /* beige */
+  color: #3e2723;
+  border-color: #a1887f;
+}
+
+/* Botón reservar */
+.btn-primary {
+  background-color: #8d6e63;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #6d4c41;
+}
+
+/* Footer */
+footer {
+  background-color: #4e342e;
+  color: #f5f5f5;
+}
+
+/* -------------------- */
+/* Modo oscuro activado */
+/* -------------------- */
+.dark-mode {
+  background-color: #1c1c1c;
+  color: #f5f5f5;
+}
+
+.dark-mode::before {
+  background-color: rgba(18, 18, 18, 0.8); /* fondo oscuro con opacidad */
+}
+
+.dark-mode .navbar {
+  background-color: #2c2c2c !important;
+}
+
+.dark-mode .form-control,
+.dark-mode .form-select {
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+  border-color: #555;
+}
+
+.dark-mode blockquote {
+  background-color: rgba(60, 60, 60, 0.7);
+  border-left-color: #bbb;
+}

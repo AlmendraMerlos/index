@@ -1,0 +1,189 @@
+/* ==== PALETA PASTEL CÁLIDA ==== */
+:root {
+    --color-principal: #f7c8c8;   /* Rosa pastel */
+    --color-secundario: #ffe5b4;  /* Durazno suave */
+    --color-fondo: #fff8f0;       /* Crema claro */
+    --color-texto: #4b3f3f;       /* Gris cálido oscuro */
+    --color-acento: #d36b6b;      /* Toque de color para botones o hover */
+}
+
+/* ==== FUENTES ==== */
+body {
+    font-family: 'Lora', serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+/* ==== HEADER ==== */
+.header-bg {
+    position: relative;
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(255, 200, 180, 0.3), rgba(255, 180, 180, 0.3)),
+        url('img.fondo/fondo1.jpg') no-repeat center center/cover;
+}
+
+.header-bg .overlay {
+    position: absolute;
+    top:0; left:0;
+    width:100%; height:100%;
+    background-color: rgba(255,240,230,0.4);
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255,255,255,0.5);
+    padding: 2.5rem 3rem;
+    border-radius: 10px;
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+    backdrop-filter: blur(4px);
+}
+
+.header-content h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight:700;
+    color:#3a2e2e;
+    letter-spacing:1px;
+    text-transform: uppercase;
+}
+
+.header-content p {
+    font-size:1.2rem;
+    font-style: italic;
+    color:#5a4d4d;
+}
+
+/* ==== SECCIONES ==== */
+section {
+    padding: 4rem 0;
+}
+
+/* Títulos secciones */
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    color:#3a2e2e;
+    font-weight:600;
+    text-align:center;
+    margin-bottom:1.5rem;
+}
+
+/* --- Variables --- */
+:root {
+    --color-principal: #e6cfcf; /* Color principal para títulos */
+}
+
+/* --- Contenedor de habilidades --- */
+.caja-habilidad {
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px;     /* Bordes redondeados */
+    overflow: hidden;
+    padding: 25px 20px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* ==== TABLA HABILIDADES ==== */
+
+.caja-habilidad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.caja-habilidad h4 {
+    background-color: Var(--color-principal); 
+    color: #3a2e2e; 
+    font-weight: 600;
+    padding: 15px 0;
+    margin: 0 0 15px 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.caja-habilidad p {
+    color: #3a2e2e;
+    line-height: 1.5;
+}
+.caja-habilidad:nth-of-type(odd) {
+    background-color: #fff1f1; 
+}
+
+.table {
+    background-color: white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.table thead {
+    background-color: var(--color-principal);
+    color: #3a2e2e;
+    font-family: 'Quicksand', sans-serif;
+    font-weight:600;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color:#fff1f1;
+}
+
+/* ==== SECCIÓN PROYECTOS ==== */
+.proyecto-card {
+    background-color: var(--color-fondo);
+    border: 2px solid var(--color-principal);
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.proyecto-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.proyecto-card .card-title {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    color: #3a2e2e;
+}
+
+.proyecto-card .card-text {
+    color:#3a2e2e;
+    font-size: 0.95rem;
+}
+
+/* ==== Contacto ==== */
+
+#contacto {
+    background-color: #ffd6dc;
+    padding: 40px 20px;
+    text-align: center;
+    color: #3a2e2e;
+    border-radius: 10px;
+}
+
+#contacto a {
+    color:var(--color-texto);
+    text-decoration: none;
+}
+/* ==== FOOTER ==== */
+
+footer {
+    background-color:#ffbfa3 ;
+    color: #3a2e2e;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width:768px){
+    .header-content { padding:1.5rem; }
+    h1{ font-size:1.8rem; }
+}

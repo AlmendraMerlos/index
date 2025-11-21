@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Gimnasio Fuerza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fuente moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="Gimnasio Fuerza.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-warning" href="#">Gimnasio Fuerza</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#horarios">Horarios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#entrenadores">Entrenadores</a></li>
+            <li class="nav-item"><a class="nav-link" href="#inscripcion">Inscripción</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="hero text-center text-light d-flex align-items-center justify-content-center">
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <h1 class="display-4 fw-bold">¡Únete a nuestra comunidad!</h1>
+            <p class="lead">Alcanza tus objetivos y transforma tu vida</p>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container my-5 pt-5">
+
+        <!-- PLANES -->
+        <section id="planes" class="my-5">
+            <h2 class="section-title text-center mb-4">Planes de Membresía</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-warning">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning fw-bold">Plan Básico</h5>
+                            <ul>
+                                <li>Acceso a las instalaciones</li>
+                                <li>Clases grupales</li>
+                                <li>Precio: $50.000/mes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-warning">
+                        <div class="card-body">
+                            <h5 class="card-title text-warning fw-bold">Plan Premium</h5>
+                            <ul>
+                                <li>Acceso a las instalaciones</li>
+                                <li>Clases grupales</li>
+                                <li>Entrenamiento personalizado</li>
+                                <li>Precio: $100.000/mes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HORARIOS -->
+        <section id="horarios" class="my-5">
+            <h2 class="section-title text-center mb-4">Horarios de Clases</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered text-center">
+                  <caption>Horario semanal de clase</caption>
+                    <thead class="table-warning">
+                        <tr>
+                            <th>Clases</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miércoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Yoga</td>
+                            <td>10:00–11:00</td>
+                            <td></td>
+                            <td>09:00–10:00</td>
+                            <td></td>
+                            <td>10:00–11:00</td>
+                        </tr>
+                        <tr>
+                            <td>Spinning</td>
+                            <td></td>
+                            <td>18:00–19:00</td>
+                            <td></td>
+                            <td>18:00–19:00</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ENTRENADORES (con tarjetas) -->
+        <section id="entrenadores" class="my-5">
+          <h2 class="section-title text-center mb-4">Entrenadores</h2>
+          <p class="text-center mb-4">
+            Nuestros entrenadores están capacitados y tienen experiencia en diversas áreas del fitness.
+          </p>
+
+          <div class="row g-4">
+            <!-- Entrenador 1 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img.fuerza/Entrenador.jpg" class="card-img-top" alt="Juan López">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-warning">Juan López</h5>
+                  <p class="card-text">Entrenador Personal</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Entrenadora 2 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img.fuerza/Entranadora.jpg" class="card-img-top" alt="Ana Martínez">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-warning">Ana Martínez</h5>
+                  <p class="card-text">Entrenadora Personal</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Entrenadora 3 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img.fuerza/yoga.jpeg" class="card-img-top" alt="Paola González">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-warning">Paola González</h5>
+                  <p class="card-text">Instructora de Yoga</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Entrenador 4 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="img.fuerza/spinning.jpg" class="card-img-top" alt="Carlos Alberto">
+                <div class="card-body text-center">
+                  <h5 class="card-title fw-bold text-warning">Carlos Alberto</h5>
+                  <p class="card-text">Instructor de Spinning</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- INSCRIPCIÓN -->
+        <section id="inscripcion" class="my-5">
+            <h2 class="section-title text-center mb-4">Inscripción</h2>
+            <form class="w-75 mx-auto" action="#" method="post">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label fw-semibold">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label fw-semibold">Correo:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="telefono" class="form-label fw-semibold">Teléfono:</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono">
+                </div>
+
+                <div class="mb-3">
+                    <label for="clase" class="form-label fw-semibold">Clase:</label>
+                    <select class="form-select" name="clase" id="clase">
+                        <option value="yoga">Yoga</option>
+                        <option value="spinning">Spinning</option>
+                        <option value="entrenador-personal">Entrenador personal</option>
+                        <option value="entrenadora-personal">Entrenadora personal</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-warning w-100 fw-bold">Inscribirse</button>
+            </form>
+        </section>
+    </main>
+<a href="index.html">Volver a Portfolio</a>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-center text-light py-3 mt-5">
+        <p class="mb-0">&copy; 2025 Gimnasio Fuerza</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

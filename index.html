@@ -1,0 +1,255 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio-Personal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header-bg text-center d-flex align-items-center justify-content-center">
+    <div class="overlay"></div>
+    <div class="header-content">
+        <h1>Almendra Merlos</h1>
+        <p>"El Éxito es la suma de pequeños esfuerzos repetidos día tras día."</p>
+    </div>
+</header>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Mi Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#acerca">Acerca de Mi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">Mis Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== ACERCA DE MI ===== -->
+<section id="acerca" class="container text-center my-5">
+    <h2>Acerca de Mi</h2>
+    <p>Hola, soy  de Argentina vivo en la provincia de Buenos Aires una apasionada desarrolladora web. Me encanta aprender nuevas tecnologías y crear soluciones innovadoras.
+       <br>Siempre estoy buscando mejorar mis habilidades y trabajar en proyectos interesantes.</p>
+       <h3>Mis Estudios:</h3>
+      <p>Curso de Diseño de Pagina Web Completo:C.F.L n°404 <br>
+       Secundario Completo:E.M.E.S n°212</p> 
+       
+    <img src="img.fondo/perfil.jpeg" alt="Foto de perfil" class="perfil-imagen rounded-circle mt-3" width="200">
+</section>
+
+<!-- ===== HABILIDADES ===== --> 
+            <section id="habilidades" class="container my-5">
+            
+            <h2 class="text-center mb-4">Mis Habilidades</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-4">
+                    <div class="caja-habilidad text-center">
+                        <h4>Desarrollo Web</h4>
+                        <p>HTML<br>CSS <br>Bootstrap</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="caja-habilidad text-center">
+                        <h4>Inteligencia Artificial</h4>
+                        <p>Conceptos básicos<br>Prompting<br>Uso de herramientas IA</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="caja-habilidad text-center">
+                        <h4>Objetivos</h4>
+                        <p>Mejorar mis proyectos<br>Aprender JavaScript<br>Crear apps con IA</p>
+                    </div>
+                </div>
+            </div>
+
+    <h3 class="text-center">Niveles</h3>
+    <table class="table table-striped text-center mt-3">
+        <thead>
+            <tr>
+                <th>Habilidad</th>
+                <th>Nivel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML5</td>
+                <td>Avanzado</td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <td>Intermedio</td>
+            </tr>
+            <tr>
+                <td>Bootstrap</td>
+                <td>Basico</td>
+            </tr>
+        
+        </tbody>
+    </table>
+</section>
+ 
+
+<!-- ===== PROYECTOS ===== -->
+<section id="proyectos" class="container my-5">
+    <h2 class="text-center">Mis Proyectos</h2>
+    <div class="row mt-4">
+
+        <!-- Proyecto 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card proyecto-card h-100">
+                <img src="img.fondo/fondogym.jpeg" class="card-img-top" alt="Proyecto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 1 Gimnasio Fuerza.</h5>
+                    <p class="card-text">Es una pagina web diseñada para promover un gimnasio y facilitar la conexion con sus miembros.Permite a los ususarios conocer los planes de entrenamiento,horarios de clases y entrenadores.Tecnologías utilizadas:
+
+                                          - HTML5: Estructura semántica y organizada para una navegación fluida.
+                                          - CSS3: Estilos personalizados y diseño visual impactante.
+                                          - Bootstrap 5: Diseño adaptable y componentes prediseñados para una experiencia móvil óptima.
+                                          - Google Fonts (Montserrat): Tipografía moderna y profesional que refleja nuestra identidad.
+                                          - JavaScript de Bootstrap: Menú desplegable en móviles para una navegación intuitiva.</p>
+
+
+                    <a href="Gimnasio Fuerza.html" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card proyecto-card h-100">
+                <img src="img.fondo/portadaterror.jpg" class="card-img-top" alt="Proyecto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 2 Pelicula De Terror</h5>
+                    <p class="card-text">La página web “El Conjuro 4” es un sitio promocional diseñado para el estreno de la nueva entrega de la saga de terror The Conjuring. El objetivo del sitio es atraer a los fanáticos del cine de terror mediante una interfaz oscura, moderna y responsive, que presenta la sinopsis, reparto principal y fechas de estreno en cines.Tecnologías utilizadas:
+
+HTML5: estructura semántica clara.
+
+CSS3: estilos visuales, sombras, tipografía importada desde Google Fonts.
+
+Fuentes: Spectral SC (títulos) y Roboto Condensed (contenido).
+
+</p>
+                    <a href="PeliculaDeTerror.html" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card proyecto-card h-100">
+                <img src="img.fondo/zapallito2.avif" class="card-img-top" alt="Proyecto 3">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 3 Receta-Cocina</h5>
+                    <p class="card-text">La página “Recetas Caseras” es un sitio web diseñado para compartir recetas de cocina de manera visual, sencilla y atractiva. El objetivo del proyecto es ofrecer a los usuarios una experiencia práctica para consultar ingredientes, pasos de preparación y recomendaciones culinarias desde cualquier dispositivo.
+
+El desarrollo se realizó utilizando HTML5 para la estructura del contenido y CSS3 para el diseño visual y la presentación. La página cuenta con un diseño limpio y responsivo que resalta imágenes de platillos, títulos y descripciones, logrando una apariencia moderna sin necesidad de JavaScript.
+.</p>
+                    <a href="Receta de Cocina.html" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Proyecto 4 -->
+   <div class="col-md-4 mb-4">
+     
+            <div class="card proyecto-card h-100">
+                <img src="img.fondo/escaperoom.png" class="card-img-top" alt="Proyecto 4">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 4 Escape Room</h5>
+                    <p class="card-text">Es una pagina  web de escape room creada con html solo para la estructura y css para el diseño visual,sin necesidad de otras tecnologias,es un diseño muy ligero y practico .</p>
+                    <a href="indexescape.html" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+<!--Proyecto 5 -->
+         <div class="col-md-4 mb-4">
+     
+            <div class="card proyecto-card h-100">
+                <img src="img.fondo/portadaheader.webp" class="card-img-top" alt="Proyecto 5">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 5 Tienda de ROPA </h5>
+                    <p class="card-text"> Es una pagina de Tienda de Ropa que ayuda a promover sus ventas al maximo teniendo asequibilidad.
+                        La estructura esta desarrollada con HTML,CSS para el estilo e visualmente atractivo y Bootstrap para las prendas y sus respectivos precios.
+                    </p>
+                    <a href="tienda.ROPA.html" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+
+<!--Proyecto 6 -->
+         <div class="col-md-4 mb-4">
+     
+            <div class="card proyecto-card h-100">
+                <img src="img.fondo/RIOSENA.jpg" class="card-img-top" alt="Proyecto 6">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 6 Destino Turistico</h5>
+                    <p class="card-text"> La página presenta a París, Francia como un destino turístico.
+Incluye varias secciones informativas y visuales que guían al visitante a conocer la ciudad y sus principales atractivos
+inicio,información,datos útiles sobre idioma, requisitos de visa y consejos para viajeros.
+ imágenes (Torre Eiffel, Louvre, Sena, Montmartre, gastronomía francesa).
+Tecnologías utilizadas
+Estilos visuales: colores, fuentes, márgenes, fondos e imágenes.
+Uso de @import para fuentes de Google Fonts.Efectos visuales
+En resumen, es una página web estática moderna, construida con HTML y CSS, preparada para incorporar JavaScript.</p>
+                    <a href="Destino.turistico.html" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+
+        <!--Proyecto 7-->
+         <div class="col-md-4 mb-4">
+     
+            <div class="card proyecto-card h-100">
+                <img src="img.fondo/otoñofondo.avif" class="card-img-top" alt="Proyecto 7">
+                <div class="card-body">
+                    <h5 class="card-title">Proyecto 7 CAFE Otoño </h5>
+                    <p class="card-text"> Es una pagina web de Cafeteria ideal para dar a conocer a todo tipo de publico.
+                        Esta estructurada con HTML,CSS y Bootstrap para el nav,las imagenes con carrousel.</p>
+                    <a href="Cafe.Otoño.html" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                </div>
+            </div>
+        </div>
+
+<!-- ===== CONTACTO ===== -->
+<section id="contacto" class="container my-5">
+    <h2 class="text-center">Contacto</h2>
+      <p>Si deseas colaborar o simplemente saludar, puedes contactarme en:</p>
+     
+     <p>Email: <a href="merlosalmendra@gmail.com">merlosalmendra@gmail.com</a> <br>
+        LinkedIn: <a href="https://www.linkedin.com/in/almendra-merlos-1325b7392?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B1Xj9XZWhRoKKm0RQCPpVlA%3D%3D" target="_blank">linkedin.com/in/Almendra Merlos</a> <br>
+       GitHub: <a href="https://github.com/AlmendraMerlos" target="_blank">github.com/AlmendraMerlos</a></p>
+      
+    </div>
+  </section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="py-3 text-center">
+   <p>&copy; 2025 Almendra Merlos. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

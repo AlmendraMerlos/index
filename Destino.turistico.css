@@ -1,0 +1,250 @@
+/* Fuente elegante y moderna */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600&display=swap');
+
+/* --- Estilos globales --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  "Playfair Display", serif;
+    background-color: #fffaf7;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* --- Encabezado y menú de navegación --- */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #ffd6d6, #fff);
+}
+
+nav li {
+    margin: 10px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e63946;
+}
+
+/* --- Sección principal: Inicio --- */
+#inicio {
+    background-image: url('img.turistico/img.ciudadPARIS.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+#inicio h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+#inicio p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Imagen principal */
+#inicio img {
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+#informacion h2 {
+    text-align: center;}
+ #informacion p{
+    text-align: center;}
+
+
+/* --- Actividades --- */
+#actividades {
+    background-image: url('imgturistico/img.bandera.jpg');
+    background-size: cover;
+    background-position: center;
+    color:  #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#actividades h2 {
+    font-family:  "Playfair Display", serif;
+    font-size: 2.5em;
+    color:#d62828;
+    margin-bottom: 20px;
+   
+}
+
+#actividades ul {
+    color: #fff;
+    list-style: none;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#actividades li {
+    background-color: rgba(0,0,0,0.5);
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1.1em;
+}
+
+/* --- Tabla de precios --- */
+#precios {
+    background-color: #fff5f5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#precios h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.3em;
+    margin-bottom: 20px;
+    color: #d62828;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #f0d1d1;
+}
+
+th {
+    background-color: #f8dcdc;
+    color: #333;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #fff0f0;
+}
+
+/* --- Contacto --- */
+#contacto {
+    background-image: url('img.turistico/img.notre-dame.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff ;
+    padding: 80px 20px;
+}
+
+#contacto h2 {
+    text-align: center;
+    font-family:   "Playfair Display", serif;
+    font-size: 2.4em;
+  
+}
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-family:   "Playfair Display", serif;
+}
+
+input[type="text"], textarea {
+    background-color: rgba(255,255,255,0.9);
+    color: #333;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #c71e2f;
+    transform: scale(1.05);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: #eee;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+footer a {
+    color: #ffd6d6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
